@@ -6,7 +6,9 @@ public class Main {
         task4();
         task5();
         task6();
-    }public static void task1() {
+    }
+
+    public static void task1() {
         System.out.println("Задача 1");
         int postpone = 15_000;
         int total = 0;
@@ -16,7 +18,9 @@ public class Main {
             total = total + postpone;
             System.out.println("Месяц " + month + " Сумма накоплений равна " + total);
         }
-    }public static void task2() {
+    }
+
+    public static void task2() {
         System.out.println("Задача 2");
         int total = 0;
         while (total < 10) {
@@ -29,7 +33,9 @@ public class Main {
             System.out.print(" " + i);
         }
         System.out.println();
-    }public static void task3() {
+    }
+
+    public static void task3() {
         System.out.println("Задача 3");
         int population = 12_000_000;
         int fertility = 17;
@@ -38,7 +44,9 @@ public class Main {
             population = population + (population / 1000 * fertility) - (population / 1000 * mortality);
             System.out.println("Год " + year + " Численность населения составляет " + population);
         }
-    }public static void task4() {
+    }
+
+    public static void task4() {
         System.out.println("Задача 4");
         int month = 0;
         int postpone = 15000;
@@ -47,32 +55,36 @@ public class Main {
             month++;
         }
         System.out.println("Месяц " + month + " Сумма накоплений равна " + postpone);
-    }public static void task5() {
+    }
+
+    public static void task5() {
         System.out.println("Задача 5");
         int month = 0;
-        int postpone =15000;
+        int postpone = 15000;
         while (postpone < 12_000_000) {
             postpone = postpone + postpone * 7 / 100;
             month++;
             if (month % 6 == 0) {
-                System.out.println("Месяц " +month+ " Итого "+postpone);
+                System.out.println("Месяц " + month + " Итого " + postpone);
             }
         }
         System.out.println(postpone);
-    }public static void task6() {
+    }
+
+    public static void task6() {
         System.out.println("Задача 6");
         double postpone = 15000;
-        int totalMonth =9*12;
         double endPostpone = 0;
         int month = 0;
-        for (; month<108; month++);
-        endPostpone = postpone*0.07+postpone;
-        if (month %6==0) {
-            System.out.println("Мусяц " + month + " Итого " + endPostpone);
+        for (; month < 108; month++) {
+            postpone = postpone + postpone *0.07;
+            if (month % 6 == 0) {
+                System.out.println("Месяц " + month + " Итого " + postpone);
+            }
+
         }
 
     }
-
 }
 
 
