@@ -77,8 +77,8 @@ public class Main {
         System.out.println("Задача 7");
         int friday = 5;
         while (friday <= 31) {
-            friday += 7;
             System.out.println("Сегодня пятница " + friday + "е число. Нужно подготовить отчет.");
+            friday += 7;
         }
 
     }public static void task8() {
