@@ -88,7 +88,7 @@ public class Main {
         int cometReturn = 0;
         while (cometReturn <= year) {
             cometReturn = cometReturn + cometCooldown;
-            if (year - 200 < cometReturn && cometReturn <= year+100) {
+            if (year - 200 < cometReturn && cometReturn <= year + 100) {
                 System.out.println(cometReturn);
             }
         }
